@@ -3,7 +3,7 @@
 from sqlalchemy.inspection import inspect
 from sqlalchemy.ext.declarative import declared_attr
 
-from yoggsaron import db
+from yoggsaron.ext import db
 
 
 class Base(db.Model):

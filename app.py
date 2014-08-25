@@ -1,9 +1,8 @@
 # coding: utf-8
 
-from flask import Flask
+from yoggsaron.app import create_app
 
+app = create_app()
 
-def create_app():
-    from yoggsaron.models import init_db
-    app = Flask(__name__)
-    init_db(app)
+if __name__ == '__main__':
+    app.run()

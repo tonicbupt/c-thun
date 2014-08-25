@@ -1,0 +1,8 @@
+appname: yoggsaron
+runtime:
+    - python: 2.7.6
+cmd:
+    - "python app.py"
+port: 5000
+services:
+    - mysql
