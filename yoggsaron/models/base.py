@@ -17,7 +17,7 @@ class Base(db.Model):
 
     @declared_attr
     def id(cls):
-        return db.Column(db.Integer, primary_key=True, autoincrement=True, default=100000)
+        return db.Column('id', db.Integer, primary_key=True)
 
     @classmethod
     def get_or_create(cls, auto_commit=True, **data):
